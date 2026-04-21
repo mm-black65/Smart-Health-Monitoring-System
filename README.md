@@ -1,8 +1,8 @@
-# Smart Health Monitoring System using Python and ESP32 Simulation
+#  🩺 Smart Health Monitoring System using Python and ESP32 Simulation
 
-A simulation-based smart health monitoring project that reads **heart rate**, **oxygen level**, and **temperature** using ESP32 with virtual sensor inputs. The project collects sensor data, saves it into a CSV file, and uses Python machine learning models to classify the patient status as healthy or risky.
+A simulation-based smart health monitoring project that reads **heart rate ❤️**, **oxygen level 🫁**, and **temperature 🌡️** using ESP32 with virtual sensor inputs. The project collects sensor data, saves it into a CSV file, and uses Python machine learning models to classify the patient status as healthy or risky.
 
-## Project Overview
+## 📌 Project Overview
 
 This project is designed as a **health monitoring prototype**.  
 It uses:
@@ -14,7 +14,7 @@ It uses:
 
 The collected data is stored in CSV format and can be used to train and compare multiple machine learning models.
 
-## Features
+##  ✨ Features
 
 - Real-time simulated health sensor monitoring
 - OLED display for live readings
@@ -23,7 +23,7 @@ The collected data is stored in CSV format and can be used to train and compare 
 - Multiple ML model testing and comparison
 - Easy to extend into a full IoT + ML project
 
-## Hardware / Components Used
+## 🧰 Hardware / Components Used
 
 ### Simulation Hardware
 - ESP32
@@ -42,7 +42,7 @@ The collected data is stored in CSV format and can be used to train and compare 
 - Matplotlib
 - Streamlit
 
-## Project Workflow
+## 🔄 Project Workflow
 
 1. Simulate sensor readings in Wokwi.
 2. ESP32 reads heart rate, oxygen, and temperature values.
@@ -52,7 +52,7 @@ The collected data is stored in CSV format and can be used to train and compare 
 6. Best model is selected and used for prediction.
 7. Streamlit dashboard shows results.
 
-## File Structure
+## 📁 File Structure
 
 ```bash
 Smart Health Monitoring/
@@ -67,7 +67,7 @@ Smart Health Monitoring/
 └── README.md
 ```
 
-## How to Run
+## 🚀 How to Run
 
 ### 1. Open the simulation
 - Load the project in Wokwi or your ESP32 simulator.
@@ -94,7 +94,7 @@ Smart Health Monitoring/
 ### 5. Build prediction app
 - Use Streamlit to create a simple interface for model selection and prediction.
 
-## Dataset Format
+## 📊 Dataset Format
 
 The CSV file contains readings like:
 
@@ -111,7 +111,7 @@ temperature,pot1,pot2,label
 18.9,4095,3731,critical
 ```
 
-## Model Ideas
+## 🤖 Model Ideas
 
 You can compare multiple models and allow the user to select one:
 - Logistic Regression
@@ -122,18 +122,18 @@ You can compare multiple models and allow the user to select one:
 - Naive Bayes
 - Gradient Boosting
 
-## Use Case
+## 🏥 Use Case
 
 This project can be presented as a:
 - Smart health monitoring prototype
 - Simulated patient monitoring system
 - ML-based abnormal condition detector
 
-## Important Note
+## ⚠️  Important Note
 
 This project uses **simulated sensor data**, not medical-grade sensor data. It is built for learning, prototyping, and portfolio demonstration.
 
-## Future Improvements
+## 🔮 Future Improvements
 
 - Add real sensors later
 - Add live dashboard using Streamlit
@@ -142,6 +142,6 @@ This project uses **simulated sensor data**, not medical-grade sensor data. It i
 - Deploy the app online
 - Connect real IoT hardware
 
-## Author
+## 👨‍💻 Author
 
-Created as a Python + ESP32 + ML health monitoring project for learning and portfolio building.
+Created as a Python + ESP32 + ML health monitoring project for learning purpose.
