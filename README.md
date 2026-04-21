@@ -1,10 +1,10 @@
 # Smart Health Monitoring System using Python and ESP32 Simulation
 
-A simulation-based smart health monitoring project that reads **heart rate**, **oxygen level**, and **temperature** using ESP32 with virtual sensor inputs. The project collects sensor data, saves it into a CSV file, and uses Python machine learning models to classify the patient status as normal or abnormal.
+A simulation-based smart health monitoring project that reads **heart rate**, **oxygen level**, and **temperature** using ESP32 with virtual sensor inputs. The project collects sensor data, saves it into a CSV file, and uses Python machine learning models to classify the patient status as healthy or risky.
 
 ## Project Overview
 
-This project is designed as a **health monitoring prototype** for portfolio and internship use.  
+This project is designed as a **health monitoring prototype**.  
 It uses:
 - Potentiometer 1 for simulated heart rate input
 - Potentiometer 2 for simulated oxygen input
@@ -50,7 +50,7 @@ The collected data is stored in CSV format and can be used to train and compare 
 4. Python script collects the serial data and saves it into `data.csv`.
 5. Machine learning models are trained on the CSV file.
 6. Best model is selected and used for prediction.
-7. Optional Streamlit dashboard shows results.
+7. Streamlit dashboard shows results.
 
 ## File Structure
 
@@ -106,8 +106,8 @@ Example:
 
 ```csv
 temperature,pot1,pot2,label
-25.5,620,304,normal
-33.5,1185,789,warning
+25.5,620,304,healhty
+33.5,1185,789,risky
 18.9,4095,3731,critical
 ```
 
@@ -128,7 +128,6 @@ This project can be presented as a:
 - Smart health monitoring prototype
 - Simulated patient monitoring system
 - ML-based abnormal condition detector
-- Internship portfolio project
 
 ## Important Note
 
