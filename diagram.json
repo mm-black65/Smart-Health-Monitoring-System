@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 16.2, "left": -179.6, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -67.2, "left": 340.84, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -84,
+      "left": -113.4,
+      "attrs": { "volume": "0.1" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -87.7, "left": -0.2, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": -87.7, "left": 115, "attrs": {} },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc1",
+      "top": 252.2,
+      "left": -163.8,
+      "attrs": {}
+    },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 233.54,
+      "left": 259.43,
+      "attrs": { "i2cAddress": "0x3c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "pot1:GND", "bb1:tn.12", "black", [ "v0", "h-48" ] ],
+    [ "pot2:GND", "bb1:tn.21", "black", [ "v0", "h-57.6" ] ],
+    [ "ntc1:GND", "bb1:bn.11", "black", [ "h0" ] ],
+    [ "oled1:GND", "bb1:bn.16", "black", [ "v0", "h-268.8" ] ],
+    [ "bz1:1", "bb1:tn.6", "black", [ "v0" ] ],
+    [ "bz1:2", "bb1:9t.a", "purple", [ "v0" ] ],
+    [ "esp:GND.1", "bb1:bn.25", "black", [ "h0.15", "v115.2" ] ],
+    [ "esp:22", "oled1:SCL", "gray", [ "h57.6", "v220.8", "h-192" ] ],
+    [ "esp:21", "oled1:SDA", "white", [ "h86.4", "v211.2", "h-201.6" ] ],
+    [ "esp:GND.3", "bb1:tn.25", "black", [ "h19.2", "v-96", "h-182.4", "v115.2", "h-155.2" ] ],
+    [ "pot1:SIG", "bb1:21t.b", "orange", [ "v0" ] ],
+    [ "pot2:SIG", "bb1:27t.d", "#8f4814", [ "v19.2", "h-58", "v76.8" ] ],
+    [ "ntc1:OUT", "bb1:16b.h", "violet", [ "h0" ] ],
+    [ "ntc1:VCC", "bb1:bp.12", "red", [ "h0" ] ],
+    [ "oled1:VCC", "bb1:bp.21", "red", [ "v-19.2", "h-222.25" ] ],
+    [ "bb1:bp.25", "esp:3V3", "red", [ "v-0.9", "h174.4", "v-240" ] ],
+    [ "pot1:VCC", "bb1:bp.18", "red", [ "v0" ] ],
+    [ "esp:35", "bb1:21t.c", "orange", [ "h-28.65", "v86.4" ] ],
+    [ "esp:25", "bb1:9t.b", "purple", [ "v0", "h-19.05", "v38.4" ] ],
+    [ "pot2:VCC", "bb1:bp.23", "red", [ "v9.6", "h-58.4" ] ],
+    [ "esp:32", "bb1:16b.g", "violet", [ "h-38.25", "v124.8" ] ],
+    [ "esp:34", "bb1:27t.e", "#8f4814", [ "h-95.85", "v115.2" ] ]
+  ],
+  "dependencies": {}
+}
